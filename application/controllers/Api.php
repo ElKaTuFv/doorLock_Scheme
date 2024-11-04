@@ -149,7 +149,7 @@ class Api extends CI_Controller
         } else {
             $rfid       = $this->input->post("rfid_id");
 
-            $cekRFID    = $this->M_Api->getUserId($rfid);
+            $cekRFID    = $this->M_Api->getRfid_Id($rfid);
 
             if (!$cekRFID) {
                 echo json_encode(array("status" => "error", "message" => "RFID ID Tidak Terdaftar"));

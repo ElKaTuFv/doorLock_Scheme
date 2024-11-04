@@ -43,6 +43,14 @@ class M_Api extends CI_Model
 	}
 
 	//log
+
+	public function getRfid_Id($rfid_id)
+	{
+		$this->db->where('rfid_id', $rfid_id);
+		$query = $this->db->get('user');
+
+		return $query->row();
+	}
 	public function getAllLog()
 	{
 		$this->db->select('log.*, user.rfid_id, user.nama');
