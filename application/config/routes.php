@@ -49,7 +49,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'welcome';
+$route['default_controller'] = 'auth/login';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
@@ -60,11 +60,18 @@ $route["api/getUserId/(:num)"] 	= "api/getUserId/$1";
 $route["api/postUser"] 			= "api/post_user";
 $route["api/putUser/(:num)"] 	= "api/put_user/$1";
 $route["api/deleteUser/(:num)"] = "api/delete_user/$1";
+$route["api/tabel_user"] 		= "api/index_user_tabel";
 
 //log
 $route["api/log"] 				= "api/index_log";
 $route["api/getLog"] 			= "api/getAllLog";
 $route["api/getLogId/(:num)"] 	= "api/getLogId/$1";
 $route["api/postLog"] 			= "api/postlog";
-$route["api/putLog/(:num)"] 	= "api/put_log/$1";
-$route["api/deleteLog/(:num)"] 	= "api/delete_log/$1";
+$route["api/tabel_log"] 		= "api/index_log_tabel";
+
+//auth
+$route["login"] 				= "auth/login";
+$route["regis"] 				= "auth/regis";
+$route["home"] 					= "dashboard";
+$route["User"] 					= "user";
+$route["log"] 					= "log";

@@ -1,0 +1,160 @@
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f8f9fa;
+}
+
+.header,
+.footer {
+	min-height: 60px;
+	padding: 0 10px;
+}
+
+.header {
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 1002;
+	display: flex;
+	background: #ff914d;
+	border-bottom: 1px solid #ffbd59;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header button {
+	background-color: rgb(252, 202, 170);
+	border: 1px solid rgb(255, 122, 39);
+	border-radius: 5px;
+	padding: 5px 10px;
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+.header button a {
+	text-align: center;
+	color: #000;
+	text-decoration: none;
+	text-align: center;
+}
+
+.logo {
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	text: 20px;
+	padding-left: 50px;
+}
+
+
+.sidebar {
+	width: 250px;
+	background-color: #ffbd59;
+	color: #ffffff;
+	position: fixed;
+	height: 100%;
+	padding-top: 70px;
+}
+
+.sidebar a {
+	padding: 10px 15px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #000;
+	display: block;
+	/* border: #000 solid 1px; */
+	border-radius: 5px;
+	margin: 5px;
+}
+
+.active_menu {
+	color: #ffffff;
+	background-color: #ff914d;
+}
+
+.sidebar a:hover {
+	color: #fff;
+	background-color: #ff914d;
+}
+
+.sidebar .menu-title {
+	padding: 10px 15px;
+	font-size: 14px;
+	color: #000;
+}
+
+.sidebar .menu-item {
+	padding-left: 50px;
+}
+
+.content {
+	margin-left: 250px;
+	padding: 20px;
+	padding-top: 70px;
+}
+
+.header-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+	padding: 10px 20px;
+	border-bottom: 1px solid rgb(100, 98, 95);
+	border-radius: 10px;
+}
+
+.header-content .welcome {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.header-content .welcome span {
+	color: #17a2b8;
+}
+
+.body-content {
+	margin-top: 20px;
+	background-color: #fff;
+	border: #dee2e6 solid 1px;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.card {
+	background-color: #fff;
+	border: 1px solid #dee2e6;
+	border-radius: 5px;
+	padding: 20px;
+	flex: 1;
+	min-width: 200px;
+	text-align: center;
+}
+
+.card h2 {
+	font-size: 36px;
+	margin: 0;
+}
+
+.card p {
+	font-size: 14px;
+	color: #6c757d;
+}
+
+.card a {
+	display: block;
+	margin-top: 10px;
+	font-size: 14px;
+	color: #17a2b8;
+	text-decoration: none;
+}
+
+.card a:hover {
+	text-decoration: underline;
+}
+
+.card i {
+	font-size: 40px;
+	color: #17a2b8;
+	margin-top: 10px;
+}
