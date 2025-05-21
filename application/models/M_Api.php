@@ -11,6 +11,11 @@ class M_Api extends CI_Model
 	{
 		return $this->db->insert('log', $data);
 	}
+	public function updateLog($where, $data)
+	{
+		$this->db->where($where);
+		return $this->db->update('log', $data);
+	}
 
 
 	public function insertReg($data)
@@ -22,6 +27,16 @@ class M_Api extends CI_Model
 	{
 		$this->db->where($where);
 		return $this->db->update('reg_id', $data);
+	}
+
+	public function getLastLog($where)
+	{
+		if (!empty($where)) {
+			$this->db->where($where);
+		}
+		$this->db->order_by('id', 'DESC');
+		$this->db->limit(1);
+		return $this->db->get('log')->row();
 	}
 }
 
